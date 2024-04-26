@@ -1,0 +1,29 @@
+{
+  "name": "alias20",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./server/dist/module.js",
+  "scripts": {
+    "dev": "vite",
+    "build-client": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "postinstall": "npm run build-client && npm run build-server",
+    "build-server": "npx tsc --project ./server/tsconfig.json"
+  },
+  "dependencies": {
+    "vue": "^3.2.47",
+    "randomcolor": "0.5.3",
+    "primeflex": "^3.3.0",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.27.0",
+    "sass": "^1.61.0",
+    "@vite/vitejs-client": "^2.2.10",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "5.3.3",
+    "vite": "^4.2.0",
+    "vue-tsc": "1.8.27",
+    "@types/express": "4.17.21",
+    "nedb-promises": "6.2.3"
+  }
+}
